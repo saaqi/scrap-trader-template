@@ -2348,9 +2348,9 @@ Footer widgets
 }
 
 .hero-slideshow-normal .container {
-  padding: 10% 0px;
   position: relative;
   z-index: 80;
+  padding-bottom: 75px;
 }
 
 .hero-slideshow-fullscreen .container {

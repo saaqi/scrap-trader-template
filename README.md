@@ -1,4 +1,4 @@
-# Trader Company Scrap Template
+# Scra Trader Company Template
 
 This is a fully responsive template designed for a trader company dealing in scrap. It includes a jumbotron with animations, a product display area, an about section, a gallery, and a contact section with a working contact form.
 

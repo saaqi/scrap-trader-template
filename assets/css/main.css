@@ -2132,7 +2132,7 @@ Footer widgets
   position: relative;
   background-color: #222222;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: calc(100vh - 75px);
   display: grid;
   place-items: center;
   /* Loading icon */
@@ -2350,7 +2350,7 @@ Footer widgets
 .hero-slideshow-normal .container {
   position: relative;
   z-index: 80;
-  padding-bottom: 75px;
+  padding: 20px 10px;
 }
 
 .hero-slideshow-fullscreen .container {
@@ -2404,6 +2404,7 @@ Footer widgets
 /* Hero Text Style1. */
 .hero-content-style1 {
   text-align: center;
+
 }
 .hero-content-style1 h2 {
   color: #FFFFFF;
@@ -2461,15 +2462,11 @@ Footer widgets
   outline: none;
 }
 
-#hero .btn {
+#home .btn {
   box-shadow: none;
 }
-#hero .btn-theme-primary:focus {
+#home .btn-theme-primary:focus {
   color: #fff;
-}
-
-.h-on-top.is-transparent #hero .container .hero__content {
-  margin-top: 75px;
 }
 
 /* Text Rotator */

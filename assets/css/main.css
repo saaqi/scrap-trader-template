@@ -425,9 +425,7 @@ h5 {
 4.0  Structure
 5.0  Contents
 6.0  Elements
-7.0  Widgets
 8.0  Sections
-9.0  External Plugins
 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -916,39 +914,12 @@ input[type=radio], input[type=checkbox] {
 }
 
 /*------------------------------
-    2.8 Accessibility
-------------------------------*/
-/*------------------------------
-    2.9 Alignments
-------------------------------*/
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 3.5em;
-}
-
-.alignright {
-  display: inline;
-  float: right;
-  margin-left: 3.5em;
-}
-
-.aligncenter {
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*------------------------------
     3.0 Clearings
 ------------------------------*/
 .clear:before,
 .clear:after,
 .entry-content:before,
 .entry-content:after,
-.comment-content:before,
-.comment-content:after,
 .site-header:before,
 .site-header:after,
 .site-content:before,
@@ -962,52 +933,10 @@ input[type=radio], input[type=checkbox] {
 
 .clear:after,
 .entry-content:after,
-.comment-content:after,
 .site-header:after,
 .site-content:after,
 .site-footer:after {
   clear: both;
-}
-
-/*------------------------------
-    3.1 Infinite Scroll
-------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-  /* Theme Footer (when set to scrolling) */
-  display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-  display: block;
-}
-
-/*------------------------------
-    3.1 Helper.
-------------------------------*/
-.hide {
-  display: none;
-}
-
-.clearleft {
-  clear: left;
-}
-
-.break, h1,
-h2,
-h3,
-h4,
-h5,
-h6, p, ul, ol, dl, blockquote, pre {
-  word-break: break-word;
-  word-wrap: break-word;
-}
-
-body.mce-content-body {
-  margin: 20px 40px;
-  font-size: 13px;
 }
 
 /*--------------------------------------------------------------
@@ -1026,17 +955,6 @@ body.mce-content-body {
 .siteorigin-panels .entry-content {
   margin-bottom: 0px;
 }
-
-#secondary {
-  padding-bottom: 40px;
-  padding-top: 0;
-}
-@media screen and (min-width: 940px) {
-  #secondary {
-    padding-top: 40px;
-  }
-}
-
 .content-area {
   width: 100%;
   float: none;
@@ -1047,97 +965,6 @@ body.mce-content-body {
   }
 }
 
-.sidebar {
-  width: 100%;
-  float: none;
-}
-@media screen and (min-width: 940px) {
-  .sidebar {
-    width: 25.2252252252%;
-    float: left;
-  }
-}
-
-.left-sidebar .site-main {
-  margin-left: auto;
-}
-
-.no-sidebar .content-area {
-  width: 100%;
-}
-
-.single-post .no-sidebar .site-main,
-.single-post .no-sidebar .entry-content > * {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 940px) {
-  .left-sidebar .content-area {
-    float: right;
-    padding-left: 39px;
-    border-left: 1px solid #e9e9e9;
-    margin-right: 1px;
-    width: 74.7747747748%;
-  }
-
-  .left-sidebar .sidebar {
-    padding-right: 39px;
-    border-right: 1px solid #e9e9e9;
-    margin-right: -1px;
-  }
-
-  .right-sidebar .content-area {
-    padding-right: 39px;
-    border-right: 1px solid #e9e9e9;
-    width: 74.7747747748%;
-  }
-
-  .right-sidebar .sidebar {
-    padding-left: 39px;
-    border-left: 1px solid #e9e9e9;
-    margin-left: -1px;
-  }
-}
-/**
-Footer widgets
- */
-.footer-widgets {
-  background: #050505;
-}
-.footer-widgets.section-padding {
-  padding: 70px 0px 35px;
-  padding: 4.375rem 0rem 2.1875rem;
-}
-.footer-widgets table {
-  border-collapse: collapse;
-}
-.footer-widgets table > thead > tr > th,
-.footer-widgets table > thead > tr > td {
-  border-width: 1px;
-}
-.footer-widgets table th,
-.footer-widgets table td {
-  border-color: rgba(233, 233, 233, 0.4);
-}
-.footer-widgets .widget-title {
-  color: #ffffff;
-}
-.footer-widgets .widget-area .widget_categories li,
-.footer-widgets .widget-area .widget_archive li,
-.footer-widgets .widget-area .widget_meta li {
-  width: 100% !important;
-  float: none;
-}
-.footer-widgets .widget_recent_entries ul li,
-.footer-widgets .widget_recent_comments ul li {
-  border-bottom: 0px none;
-  padding: 5px 0px;
-  margin-bottom: 0px;
-}
-.footer-widgets .sidebar .widget {
-  margin-bottom: 30px;
-}
 
 /*--------------------------------------------------------------
 4.0 Structure
@@ -1177,59 +1004,6 @@ Footer widgets
     padding-left: 30px;
     padding-right: 30px;
   }
-}
-
-.is-transparent .followWrap {
-  z-index: 99;
-  width: 100%;
-  background: transparent;
-  position: absolute;
-  top: 0px;
-  display: block;
-}
-.is-transparent .site-header {
-  background: transparent;
-  position: fixed;
-  top: 0px;
-}
-.is-transparent .site-header.no-sticky {
-  position: absolute;
-  top: auto;
-}
-.is-transparent .site-header.no-scroll {
-  box-shadow: none;
-}
-.is-transparent .site-header.no-scroll .has-t-logo .custom-logo-transparent {
-  display: inline-block;
-}
-.is-transparent .site-header.no-scroll .has-t-logo .custom-logo {
-  display: none;
-}
-.is-transparent .site-header.no-scroll #nav-toggle span {
-  background-color: #ffffff;
-}
-.is-transparent .site-header.no-scroll #nav-toggle span::before, .is-transparent .site-header.no-scroll #nav-toggle span::after {
-  background-color: #ffffff;
-}
-.is-transparent .site-header.no-scroll #nav-toggle.nav-is-visible span {
-  background-color: transparent;
-}
-.is-transparent .site-header.header-fixed {
-  background: #ffffff;
-}
-.is-transparent .site-header.header-fixed.no-scroll {
-  background: transparent;
-  box-shadow: none;
-}
-
-@media screen and (min-width: 1140px) {
-  .is-transparent .no-scroll.site-header .onepress-menu > li > a {
-    color: rgba(255, 255, 255, 0.9);
-  }
-}
-.is-transparent .hero-slideshow-fullscreen .hero__content {
-  padding-top: 50px;
-  padding-top: 3.125rem;
 }
 
 .site-branding {
@@ -2669,6 +2443,11 @@ Footer widgets
   width: 100%;
 }
 
+.section-contact .contact-form .contact-form-submit-button {
+    width: 100%;
+}
+
+
 div.wpcf7-validation-errors {
   margin: 20px 0px;
   padding: 15px;
@@ -2762,11 +2541,7 @@ a,
 .site-footer .footer-social a:hover,
 .site-footer .btt a:hover,
 .highlight,
-#comments .comment .comment-wrapper .comment-meta .comment-time:hover,
-#comments .comment .comment-wrapper .comment-meta .comment-reply-link:hover,
-#comments .comment .comment-wrapper .comment-meta .comment-edit-link:hover,
 .btn-theme-primary-outline,
-.sidebar .widget a:hover,
 .section-services .service-item .service-image i,
 .counter_item .counter__number,
 .team-member .member-thumb .member-profile a:hover,
@@ -2813,8 +2588,7 @@ button.contact-form-submit-button:hover {
     border-color: #1e73be
 }
 
-.site-header,
-.is-transparent .site-header.header-fixed {
+.site-header {
     background: #f8f9f9;
     border-bottom: 0px none
 }
@@ -2841,17 +2615,6 @@ button.contact-form-submit-button:hover {
         -o-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out
     }
-}
-
-#footer-widgets {}
-
-.gallery-carousel .g-item {
-    padding: 0px 5px
-}
-
-.gallery-carousel-wrap {
-    margin-left: -5px;
-    margin-right: -5px
 }
 
 .gallery-grid .g-item,

@@ -77,6 +77,14 @@ textarea {
     overflow: auto
 }
 
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit
